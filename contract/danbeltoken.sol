@@ -17,7 +17,7 @@ contract DanBelToken {
 
     string public name = "DanBelToken";
     uint public totalSupply = 1000000;
-        uint public cost = 1 ether * 75 / 100000;
+    uint public cost = 1 ether * 75 / 100000;
 
     mapping(address => User) public users;
     address[] public userAddress;
