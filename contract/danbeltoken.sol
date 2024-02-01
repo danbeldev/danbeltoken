@@ -10,8 +10,10 @@ contract DanBelToken {
     }
 
     struct User {
-        string referalCode;
+        string referralCode;
+        string fromReferralCode;
         uint balance;
+        uint8 discountPercent;
         UserRole role;
     }
 
@@ -20,20 +22,37 @@ contract DanBelToken {
     uint public cost = 1 ether * 75 / 100000;
 
     mapping(address => User) public users;
+    mapping(string => User) public refCodeUser;
     address[] public userAddress;
 
     address public owner;
 
-    constructor(address _owner, address investor1) {
+    constructor(address _owner, address investor1, address investor2) {
         owner = _owner;
 
         setUser(owner, 10000000, UserRole.OWNER);
         setUser(investor1, 300000, UserRole.BASE_USER);
+        setUser(investor2, 300000, UserRole.BASE_USER);
+    }
+
+    function setReferral(address addr, string code) public {
+        User user = users[addr];
+        require(user.fromReferralCode == "");
+
+        User refUser = refCodeUser[code];
+        require(refUser == user);
+        require(refUser.discountPercent >= 3);
+
+        user.fromReferralCode = code;
+        user.balance += 100;
+        refUser.discountPercent += 1;
     }
 
     function setUser(address addr, uint balance, UserRole role) public {
         string memory referralCode = getReferralCode(addr);
-        users[addr] = User(referralCode, balance, role);
+        User user = User(referralCode, "", balance, 0, role);
+        users[addr] = user;
+        users[referralCode] = user;
         userAddress.push(addr);
     }
 
@@ -56,5 +75,9 @@ contract DanBelToken {
     function transferFrom_(address from, address to, uint amount) private {
         users[from].balance -= amount;
         users[to].balance += amount;
+    }
+
+    function changeCost(uint newValue) public {
+        cost = newValue;
     }
 }

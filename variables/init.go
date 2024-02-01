@@ -8,6 +8,7 @@ import (
 var (
 	Client   *ethclient.Client
 	Keystore *keystore.KeyStore
+	//Contract *contract.Contract
 )
 
 func Init() {
