@@ -35,12 +35,12 @@ contract DanBelToken {
         setUser(investor2, 300000, UserRole.BASE_USER);
     }
 
-    function setReferral(address addr, string code) public {
-        User user = users[addr];
-        require(user.fromReferralCode == "");
+    function setReferral(address addr, string memory code) public view {
+        User memory user = users[addr];
+        require(keccak256(abi.encodePacked(user.fromReferralCode))!=keccak256(abi.encodePacked("")));
+        require(keccak256(abi.encodePacked(user.referralCode))==keccak256(abi.encodePacked(code)));
 
-        User refUser = refCodeUser[code];
-        require(refUser == user);
+        User memory refUser = refCodeUser[code];
         require(refUser.discountPercent >= 3);
 
         user.fromReferralCode = code;
@@ -50,9 +50,9 @@ contract DanBelToken {
 
     function setUser(address addr, uint balance, UserRole role) public {
         string memory referralCode = getReferralCode(addr);
-        User user = User(referralCode, "", balance, 0, role);
+        User memory user = User(referralCode, "", balance, 0, role);
         users[addr] = user;
-        users[referralCode] = user;
+        refCodeUser[referralCode] = user;
         userAddress.push(addr);
     }
 

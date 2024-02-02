@@ -1,6 +1,8 @@
 package variables
 
 import (
+	"danbeltoken/contract"
+
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/ethclient"
 )
@@ -8,7 +10,7 @@ import (
 var (
 	Client   *ethclient.Client
 	Keystore *keystore.KeyStore
-	//Contract *contract.Contract
+	Contract *contract.Contract
 )
 
 func Init() {

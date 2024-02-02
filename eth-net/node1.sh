@@ -1,2 +1,4 @@
 # bin/bash
-geth --datadir node1 --networkid 11111 --http --http.port 1111 --http.addr 0.0.0.0 --allow-insecure-unlock --http.api eth,net,debug,miner,web3,personal,txpool --port 30306 --bootnodes enode://f7c7ab3fb0641c7ae5dcc825b6e1ac7488ce8e15254debf2202051bea9c99319b01386880451a99c9de7ed9b3fbe44dbc7b15da3b096b73c41f96bb1078af711@127.0.0.1:0?discport=30305 --unlock 0x1A6be8c4C1DE78ae1Ef935D8B1344628f53BFad0 --password owner.txt --syncmode full
+geth --datadir network/node1 --networkid 12345 --port 30306 --http --http.port 1111 --allow-insecure-unlock \
+  --http.api admin,clique,debug,eth,miner,personal,net,txpool --syncmode full \
+  --bootnodes enode://a73fde7aab28a8c98ab6741415d3469f65970aaf5f704a85bb51915aed2cca760222f4f25695a275d9383091a1dc39b3627360932e0887b42f5ae91f82b5b194@127.0.0.1:0?discport=30305
