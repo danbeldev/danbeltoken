@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <form action="/">
+        <button>Exit</button>
+    </form>
+</div>
+<div>
+    <div>Address {{.UserData.Addr}}</div>
+</div>
+<div>
+    <div>Role {{.UserData.Role}}</div>
+</div>
+<div>
+    <div>Eth {{.Eth}}</div>
+</div>
+<div>
+    <div>Token Balance {{.UserData.Balance}}</div>
+</div>
+<div>
+    <div>Referral code {{.UserData.ReferralCode}}</div>
+</div>
+<div>
+    <div>Discount percent {{.UserData.DiscountPercent}}%</div>
+</div>
+<div>
+    Set referral code
+    <form action="/referral-code?address={{.UserData.Addr}}" method="post">
+        <div>
+            <input type="text" name="ref_code" placeholder="Code"/>
+        </div>
+        <button>Enter</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
 # bin/bash
 geth --datadir network/node1 --networkid 12345 --port 30306 --http --http.port 1111 --allow-insecure-unlock \
   --http.api admin,clique,debug,eth,miner,personal,net,txpool --syncmode full \
-  --bootnodes enode://a73fde7aab28a8c98ab6741415d3469f65970aaf5f704a85bb51915aed2cca760222f4f25695a275d9383091a1dc39b3627360932e0887b42f5ae91f82b5b194@127.0.0.1:0?discport=30305
+  --bootnodes enode://861ca8e860a0580c1f3249fde96cf8483e185234b151ef656d2e62e97408baa47e06b23d79fec5dba9e7571e23f9027c94370bb73c867541f118f7b8fc4357df@127.0.0.1:0?discport=30305

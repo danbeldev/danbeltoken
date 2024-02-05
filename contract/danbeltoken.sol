@@ -2,19 +2,13 @@ pragma solidity ^0.8.0;
 
 contract DanBelToken {
 
-    enum UserRole {
-        BASE_USER,
-        PUBLIC,
-        PRIVATE,
-        OWNER
-    }
-
     struct User {
         string referralCode;
         string fromReferralCode;
         uint balance;
         uint8 discountPercent;
-        UserRole role;
+        string role;
+        address addr;
     }
 
     string public name = "DanBelToken";
@@ -30,9 +24,9 @@ contract DanBelToken {
     constructor(address _owner, address investor1, address investor2) {
         owner = _owner;
 
-        setUser(owner, 10000000, UserRole.OWNER);
-        setUser(investor1, 300000, UserRole.BASE_USER);
-        setUser(investor2, 300000, UserRole.BASE_USER);
+        setUser(owner, 10000000, "OWNER");
+        setUser(investor1, 300000, "BASE_USER");
+        setUser(investor2, 300000, "BASE_USER");
     }
 
     function setReferral(address addr, string memory code) public view {
@@ -48,9 +42,9 @@ contract DanBelToken {
         refUser.discountPercent += 1;
     }
 
-    function setUser(address addr, uint balance, UserRole role) public {
+    function setUser(address addr, uint balance, string memory role) public {
         string memory referralCode = getReferralCode(addr);
-        User memory user = User(referralCode, "", balance, 0, role);
+        User memory user = User(referralCode, "", balance, 0, role, addr);
         users[addr] = user;
         refCodeUser[referralCode] = user;
         userAddress.push(addr);

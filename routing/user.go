@@ -4,16 +4,25 @@ import (
 	"danbeltoken/variables"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/gin-gonic/gin"
+	"math/big"
 	"net/http"
 )
 
-type User struct {
-	RefCode string
-}
+func UserPage(ctx *gin.Context) {
+	address := common.HexToAddress(ctx.Query("address"))
+	role := ctx.Query("role")
+	user, _ := variables.Contract.Users(variables.DefaultCallOpts(), address)
 
-func GetUser(ctx *gin.Context) {
-	address := common.HexToAddress("0x3EAb2cDBf65f7F6A507bdA5178cB80F25F5DB151")
-	refCode := variables.Contract.GetReferralCode(address)
-	user := User{RefCode: refCode}
-	ctx.JSON(http.StatusOK, user)
+	blockNumber, _ := variables.Client.BlockNumber(ctx)
+	eth, _ := variables.Client.BalanceAt(ctx, address, big.NewInt(int64(blockNumber)))
+
+	templateDict := map[string]string{
+		"BASE_USER": "user.html",
+		"OWNER":     "user.html",
+	}
+
+	ctx.HTML(http.StatusOK, templateDict[role], gin.H{
+		"UserData": user,
+		"Eth":      eth,
+	})
 }
