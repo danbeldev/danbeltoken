@@ -18,7 +18,7 @@ func UserPage(ctx *gin.Context) {
 
 	templateDict := map[string]string{
 		"BASE_USER": "user.html",
-		"OWNER":     "user.html",
+		"OWNER":     "owner.html",
 	}
 
 	ctx.HTML(http.StatusOK, templateDict[role], gin.H{

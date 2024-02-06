@@ -12,8 +12,9 @@ contract DanBelToken {
     }
 
     string public name = "DanBelToken";
+    string public symbol = "DanBel";
+    uint public decimals = 6;
     uint public totalSupply = 1000000;
-    uint public cost = 1 ether * 75 / 100000;
 
     mapping(address => User) public users;
     mapping(string => User) public refCodeUser;
@@ -21,12 +22,13 @@ contract DanBelToken {
 
     address public owner;
 
-    constructor(address _owner, address investor1, address investor2) {
+    constructor(address _owner, address tom, address max, address jack) {
         owner = _owner;
 
-        setUser(owner, 10000000, "OWNER");
-        setUser(investor1, 300000, "BASE_USER");
-        setUser(investor2, 300000, "BASE_USER");
+        setUser(owner, 100000, "OWNER");
+        setUser(tom, 200000, "BASE_USER");
+        setUser(max, 300000, "BASE_USER");
+        setUser(jack, 400000, "BASE_USER");
     }
 
     function setReferral(address addr, string memory code) public view {
@@ -60,18 +62,5 @@ contract DanBelToken {
             str[(i*2)+1] = alph[uint8(addrBytes[i]) % alph.length];
         }
         return string(abi.encodePacked("PROFI - ", string(str), "2024"));
-    }
-
-    function buy(uint amount) public payable {
-        transferFrom_(owner,msg.sender,amount);
-    }
-
-    function transferFrom_(address from, address to, uint amount) private {
-        users[from].balance -= amount;
-        users[to].balance += amount;
-    }
-
-    function changeCost(uint newValue) public {
-        cost = newValue;
     }
 }
