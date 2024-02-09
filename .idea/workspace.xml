@@ -5,202 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dd7acba-90d7-4275-b773-a7860dd2318d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/contract/nft/danbelnft.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/owner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contract/DanBelToken.abi" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contract/DanBelToken.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contract/DanBelToken.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contract/danbeltoken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contract/danbeltoken.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/network/accounts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/boot.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/genesis.json" beforeDir="false" afterPath="$PROJECT_DIR$/network/genesis.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/keystore/UTC--2024-02-05T08-58-46.053638394Z--873a20a8417530bfdfc7d0057fa68739bce35438" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/keystore/UTC--2024-02-05T08-59-09.365661939Z--f19e833b377dcf415502e91c0778b1a00b876af3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/network/node1.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00004096.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00135168.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00266240.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00397312.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00528384.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00659456.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00790528.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_00921600.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01052672.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01183744.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01314816.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01445888.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01576960.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01708032.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/limbo/bkt_01839104.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00004096.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00135168.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00266240.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00397312.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00528384.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00659456.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00790528.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_00921600.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01052672.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01183744.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01314816.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01445888.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01576960.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01708032.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/blobpool/queue/bkt_01839104.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000004.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000005.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000008.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/nft/danbelnft.sol" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000009.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000010.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/MANIFEST-000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000012.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000013.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000014.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/000015.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/network/node1/geth/chaindata/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/MANIFEST-000006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/OPTIONS-000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/FLOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/bodies.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/bodies.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/bodies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/diffs.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/diffs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/diffs.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/hashes.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/hashes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/hashes.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/headers.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/headers.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/headers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/receipts.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/receipts.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/ancient/chain/receipts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/jwtsecret" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/000002.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/MANIFEST-000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/OPTIONS-000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/FLOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/bodies.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/bodies.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/bodies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/diffs.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/diffs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/diffs.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/hashes.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/hashes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/hashes.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/headers.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/headers.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/headers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/receipts.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/receipts.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/lightchaindata/ancient/chain/receipts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodekey" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/000001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/LOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/MANIFEST-000000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/geth/transactions.rlp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/keystore/UTC--2024-02-02T08-28-42.656879617Z--3eab2cdbf65f7f6a507bda5178cb80f25f5db151" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/keystore/UTC--2024-02-05T08-57-56.901202409Z--47c57dc89de3c53aeabe5b0edaff5f4e3c3f0ab1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/keystore/UTC--2024-02-05T08-58-46.053638394Z--873a20a8417530bfdfc7d0057fa68739bce35438" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node1/keystore/UTC--2024-02-05T08-59-09.365661939Z--f19e833b377dcf415502e91c0778b1a00b876af3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00004096.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00135168.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00266240.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00397312.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00528384.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00659456.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00790528.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_00921600.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01052672.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01183744.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01314816.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01445888.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01576960.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01708032.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/limbo/bkt_01839104.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00004096.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00135168.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00266240.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00397312.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00528384.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00659456.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00790528.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_00921600.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01052672.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01183744.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01314816.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01445888.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01576960.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01708032.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/blobpool/queue/bkt_01839104.bag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000004.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000005.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000008.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/chaindata/OPTIONS-000011" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/000002.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/network/node1/geth/nodes/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/CURRENT.bak" beforeDir="false" afterPath="$PROJECT_DIR$/network/node1/geth/nodes/CURRENT.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/network/node1/geth/nodes/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node1/geth/nodes/MANIFEST-000004" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000009.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000010.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/MANIFEST-000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000012.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000013.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000014.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/000015.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2/geth/chaindata/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/MANIFEST-000006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/OPTIONS-000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/FLOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/bodies.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/bodies.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/bodies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/diffs.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/diffs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/diffs.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/hashes.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/hashes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/hashes.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/headers.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/headers.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/headers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/receipts.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/receipts.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/ancient/chain/receipts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/jwtsecret" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/000002.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/MANIFEST-000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/OPTIONS-000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/FLOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/bodies.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/bodies.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/bodies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/diffs.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/diffs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/diffs.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/hashes.0000.rdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/hashes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/hashes.ridx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/headers.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/headers.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/headers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/receipts.0000.cdat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/receipts.cidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/lightchaindata/ancient/chain/receipts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodekey" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/000001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/LOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/MANIFEST-000000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/geth/transactions.rlp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/keystore/UTC--2024-02-02T08-28-42.656879617Z--3eab2cdbf65f7f6a507bda5178cb80f25f5db151" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/keystore/UTC--2024-02-05T08-57-56.901202409Z--47c57dc89de3c53aeabe5b0edaff5f4e3c3f0ab1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/keystore/UTC--2024-02-05T08-58-46.053638394Z--873a20a8417530bfdfc7d0057fa68739bce35438" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/node2/keystore/UTC--2024-02-05T08-59-09.365661939Z--f19e833b377dcf415502e91c0778b1a00b876af3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routing/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/routing/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/variables/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/chaindata/OPTIONS-000011" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/000002.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2/geth/nodes/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/CURRENT.bak" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2/geth/nodes/CURRENT.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2/geth/nodes/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/nodes/MANIFEST-000004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/node2/geth/transactions.rlp" beforeDir="false" afterPath="$PROJECT_DIR$/network/node2/geth/transactions.rlp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,24 +69,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build danbeltoken.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/danbel/Documents/danbeltoken/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build danbeltoken.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/danbel/Documents/danbeltoken/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
@@ -273,8 +112,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-cf85c2eafa99-d131227c97e2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.11592" />
-        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-GO-241.11592" />
+        <option value="bundled-gosdk-cf85c2eafa99-d131227c97e2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.11770" />
+        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-GO-241.11770" />
       </set>
     </attachedChunks>
   </component>

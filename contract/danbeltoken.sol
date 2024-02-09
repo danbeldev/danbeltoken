@@ -11,7 +11,41 @@ contract DanBelToken {
         address addr;
     }
 
-    string public name = "DanBelToken";
+    struct NFT {
+        uint id;
+        address addr;
+        string name;
+        string desc;
+        uint price;
+        uint64 createDateInUnixTimestamp;
+        uint count;
+    }
+
+    struct NFTCollection {
+        uint id;
+        address addr;
+        string name;
+        string desc;
+        NFT[] nfts;
+    }
+
+    struct Auction {
+        uint id;
+        uint64 startDate;
+        uint64 endDate;
+        uint minPrice;
+        uint maxPrice;
+        address addr;
+        uint bet;
+        bool isFinal;
+        NFTCollection collection;
+    }
+
+    NFT[] public nfts;
+    NFTCollection[] public nftCollections;
+    Auction[] public auctions;
+
+    string public tokenName = "DanBelToken";
     string public symbol = "DanBel";
     uint public decimals = 6;
     uint public totalSupply = 1000000;
@@ -20,9 +54,11 @@ contract DanBelToken {
     mapping(string => User) public refCodeUser;
     address[] public userAddress;
 
+    uint public startTime;
     address public owner;
 
     constructor(address _owner, address tom, address max, address jack) {
+        startTime = block.timestamp;
         owner = _owner;
 
         setUser(owner, 100000, "OWNER");
@@ -63,4 +99,102 @@ contract DanBelToken {
         }
         return string(abi.encodePacked("PROFI - ", string(str), "2024"));
     }
+
+    function createNft(
+        address addr,
+        string memory name,
+        string memory desc,
+        uint price,
+        uint64 createDateInUnixTimestamp,
+        uint count
+    ) public {
+        uint id = nfts.length;
+        NFT memory nft = NFT(id, addr, name, desc, price, createDateInUnixTimestamp, count);
+        nfts.push(nft);
+    }
+
+//    function createNFTCollection(
+//        address addr,
+//        string memory name,
+//        string memory desc,
+//        NFT[] memory nft
+//    ) public {
+//        uint id = nftCollections.length;
+//        nftCollections.push(NFTCollection(id, addr, name, desc, nft));
+//    }
+
+//    function createAuction(
+//        uint collectionId,
+//        uint64 startDate,
+//        uint64 endDate,
+//        uint minPrice,
+//        uint maxPrice
+//    ) public {
+//        uint id = auctions.length;
+//        Auction memory action = Auction(
+//            id,
+//            startDate,
+//            endDate,
+//            minPrice,
+//            maxPrice,
+//            address(0),
+//            0,
+//            false,
+//            nftCollections[collectionId]
+//        );
+//
+//        auctions.push(action);
+//    }
+
+    function transferNFT(
+        uint nftId,
+        address from,
+        address to,
+        uint price
+    ) public {
+        User memory fromUser = users[from];
+        User memory toUser = users[to];
+
+        toUser.balance -= price;
+        fromUser.balance += price;
+
+        transferNFT(nftId, to);
+    }
+
+    function transferNFT(
+        uint nftId,
+        address addr
+    ) public {
+        NFT memory nft = nfts[nftId];
+        nft.addr = addr;
+        nfts[nft.id] = nft;
+    }
+
+//    function auctionBet(
+//        uint auctionId,
+//        uint bet,
+//        address addr
+//    ) public {
+//        Auction memory auction = auctions[auctionId];
+//
+//        require(auction.isFinal);
+//        require(auction.bet>bet);
+//        require(auction.minPrice>bet);
+//        require(auction.maxPrice<bet);
+//
+//        User memory user = users[addr];
+//        require(user.balance<bet);
+//
+//        auction.addr = addr;
+//        auction.bet = bet;
+//        auctions[auctionId] = auction;
+//    }
+
+//    function auctionSetFinal(
+//        uint auctionId
+//    ) public {
+//        Auction auction = auctions[auctionId];
+//        auction.isFinal = true;
+//        auctions[auctionId] = auction;
+//    }
 }
