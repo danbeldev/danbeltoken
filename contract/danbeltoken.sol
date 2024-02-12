@@ -26,7 +26,6 @@ contract DanBelToken {
         address addr;
         string name;
         string desc;
-        NFT[] nfts;
     }
 
     struct Auction {
@@ -44,6 +43,8 @@ contract DanBelToken {
     NFT[] public nfts;
     NFTCollection[] public nftCollections;
     Auction[] public auctions;
+
+    mapping(uint => uint[]) public colNfts;
 
     string public tokenName = "DanBelToken";
     string public symbol = "DanBel";
@@ -67,17 +68,22 @@ contract DanBelToken {
         setUser(jack, 400000, "BASE_USER");
     }
 
-    function setReferral(address addr, string memory code) public view {
+    function setReferral(address addr, string memory code) public {
         User memory user = users[addr];
-        require(keccak256(abi.encodePacked(user.fromReferralCode))!=keccak256(abi.encodePacked("")));
-        require(keccak256(abi.encodePacked(user.referralCode))==keccak256(abi.encodePacked(code)));
+        require(isEmpty(user.fromReferralCode), "user ref code is not empty");
+        require(compareStrings(user.referralCode, code), "user ref code equals");
 
         User memory refUser = refCodeUser[code];
-        require(refUser.discountPercent >= 3);
 
         user.fromReferralCode = code;
         user.balance += 100;
-        refUser.discountPercent += 1;
+        if(refUser.discountPercent < 3) {
+            refUser.discountPercent += 1;
+            users[refUser.addr] = refUser;
+            refCodeUser[refUser.referralCode] = refUser;
+        }
+
+        users[addr] = user;
     }
 
     function setUser(address addr, uint balance, string memory role) public {
@@ -113,38 +119,44 @@ contract DanBelToken {
         nfts.push(nft);
     }
 
-//    function createNFTCollection(
-//        address addr,
-//        string memory name,
-//        string memory desc,
-//        NFT[] memory nft
-//    ) public {
-//        uint id = nftCollections.length;
-//        nftCollections.push(NFTCollection(id, addr, name, desc, nft));
-//    }
+    function createNFTCollection(
+        address addr,
+        string memory name,
+        string memory desc
+    ) public {
+        uint id = nftCollections.length;
+        nftCollections.push(NFTCollection(id, addr, name, desc));
+    }
 
-//    function createAuction(
-//        uint collectionId,
-//        uint64 startDate,
-//        uint64 endDate,
-//        uint minPrice,
-//        uint maxPrice
-//    ) public {
-//        uint id = auctions.length;
-//        Auction memory action = Auction(
-//            id,
-//            startDate,
-//            endDate,
-//            minPrice,
-//            maxPrice,
-//            address(0),
-//            0,
-//            false,
-//            nftCollections[collectionId]
-//        );
-//
-//        auctions.push(action);
-//    }
+    function setColNft(
+        uint colId,
+        uint nftId
+    ) public {
+        colNfts[colId].push(nftId);
+    }
+
+    function createAuction(
+        uint collectionId,
+        uint64 startDate,
+        uint64 endDate,
+        uint minPrice,
+        uint maxPrice
+    ) public {
+        uint id = auctions.length;
+        Auction memory action = Auction(
+            id,
+            startDate,
+            endDate,
+            minPrice,
+            maxPrice,
+            address(0),
+            0,
+            false,
+            nftCollections[collectionId]
+        );
+
+        auctions.push(action);
+    }
 
     function transferNFT(
         uint nftId,
@@ -170,31 +182,40 @@ contract DanBelToken {
         nfts[nft.id] = nft;
     }
 
-//    function auctionBet(
-//        uint auctionId,
-//        uint bet,
-//        address addr
-//    ) public {
-//        Auction memory auction = auctions[auctionId];
-//
-//        require(auction.isFinal);
-//        require(auction.bet>bet);
-//        require(auction.minPrice>bet);
-//        require(auction.maxPrice<bet);
-//
-//        User memory user = users[addr];
-//        require(user.balance<bet);
-//
-//        auction.addr = addr;
-//        auction.bet = bet;
-//        auctions[auctionId] = auction;
-//    }
+    function auctionBet(
+        uint auctionId,
+        uint bet,
+        address addr
+    ) public {
+        Auction memory auction = auctions[auctionId];
 
-//    function auctionSetFinal(
-//        uint auctionId
-//    ) public {
-//        Auction auction = auctions[auctionId];
-//        auction.isFinal = true;
-//        auctions[auctionId] = auction;
-//    }
+        require(auction.isFinal);
+        require(auction.bet>bet);
+        require(auction.minPrice>bet);
+        require(auction.maxPrice<bet);
+
+        User memory user = users[addr];
+        require(user.balance<bet);
+
+        auction.addr = addr;
+        auction.bet = bet;
+        auctions[auctionId] = auction;
+    }
+
+    function auctionSetFinal(
+        uint auctionId
+    ) public {
+        Auction memory auction = auctions[auctionId];
+        auction.isFinal = true;
+        auctions[auctionId] = auction;
+    }
+
+    function compareStrings(string memory a, string memory b) public view returns (bool) {
+        return (keccak256(abi.encodePacked((a))) == keccak256(abi.encodePacked((b))));
+    }
+
+    function isEmpty(string memory s) public view returns(bool) {
+        bytes memory sBytes = bytes(s);
+        return sBytes.length == 0;
+    }
 }

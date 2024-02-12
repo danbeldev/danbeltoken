@@ -31,3 +31,68 @@
 15:12:25.977418 table@remove removed @2
 17:37:41.624902 db@close closing
 17:37:41.625046 db@close done T·143.328µs
+=============== Feb 12, 2024 (+04) ===============
+14:00:33.978784 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:00:33.979256 version@stat F·[0 1] S·695B[0B 695B] Sc·[0.00 0.00]
+14:00:33.979270 db@open opening
+14:00:33.979304 journal@recovery F·1
+14:00:33.979772 journal@recovery recovering @6
+14:00:33.985909 memdb@flush created L0@9 N·4034 S·38KiB "loc..seq,v1676":"n:\xfe..ong,v1697"
+14:00:33.987034 version@stat F·[1 1] S·39KiB[38KiB 695B] Sc·[0.25 0.00]
+14:00:34.001064 db@janitor F·5 G·1
+14:00:34.001076 db@janitor removing table-5
+14:00:34.001119 db@open done T·21.843186ms
+=============== Feb 12, 2024 (+04) ===============
+15:37:26.118705 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:37:26.118882 version@stat F·[1 1] S·39KiB[38KiB 695B] Sc·[0.25 0.00]
+15:37:26.118903 db@open opening
+15:37:26.118957 journal@recovery F·1
+15:37:26.119747 journal@recovery recovering @10
+15:37:26.123923 memdb@flush created L0@12 N·2661 S·25KiB "loc..seq,v5711":"n:\xfe..ong,v5712"
+15:37:26.124105 version@stat F·[2 1] S·64KiB[63KiB 695B] Sc·[0.50 0.00]
+15:37:26.135092 db@janitor F·5 G·0
+15:37:26.135121 db@open done T·16.209409ms
+15:37:26.137979 table@compaction L0·2 -> L1·1 S·64KiB Q·8372
+15:37:26.141728 table@build created L1@15 N·12 S·623B "loc..seq,v5711":"version,v1"
+15:37:26.141760 version@stat F·[0 1] S·623B[0B 623B] Sc·[0.00 0.00]
+15:37:26.143930 table@compaction committed F-2 S-63KiB Ke·0 D·6697 T·5.908499ms
+15:37:26.144034 table@remove removed @9
+15:37:26.144074 table@remove removed @8
+=============== Feb 12, 2024 (+04) ===============
+15:40:25.381936 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:40:25.382108 version@stat F·[0 1] S·623B[0B 623B] Sc·[0.00 0.00]
+15:40:25.382131 db@open opening
+15:40:25.382184 journal@recovery F·1
+15:40:25.383091 journal@recovery recovering @13
+15:40:25.385123 memdb@flush created L0@16 N·84 S·1KiB "loc..seq,v8373":"n:\xfe..ong,v8394"
+15:40:25.386665 version@stat F·[1 1] S·1KiB[1KiB 623B] Sc·[0.25 0.00]
+15:40:25.397686 db@janitor F·5 G·1
+15:40:25.397704 db@janitor removing table-12
+15:40:25.397765 db@open done T·15.625044ms
+=============== Feb 12, 2024 (+04) ===============
+16:25:35.469634 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:25:35.469760 version@stat F·[1 1] S·1KiB[1KiB 623B] Sc·[0.25 0.00]
+16:25:35.469777 db@open opening
+16:25:35.469814 journal@recovery F·1
+16:25:35.471657 journal@recovery recovering @17
+16:25:35.474663 memdb@flush created L0@19 N·1212 S·11KiB "loc..seq,v8458":"n:\xfe..ong,v8479"
+16:25:35.476649 version@stat F·[2 1] S·13KiB[12KiB 623B] Sc·[0.50 0.00]
+16:25:35.484393 db@janitor F·5 G·0
+16:25:35.484410 db@open done T·14.626475ms
+16:25:35.486506 table@compaction L0·2 -> L1·1 S·13KiB Q·9670
+16:25:35.489728 table@build created L1@22 N·12 S·618B "loc..seq,v8458":"version,v1"
+16:25:35.489767 version@stat F·[0 1] S·618B[0B 618B] Sc·[0.00 0.00]
+16:25:35.491659 table@compaction committed F-2 S-12KiB Ke·0 D·1296 T·5.125307ms
+16:25:35.491722 table@remove removed @16
+16:25:35.491755 table@remove removed @15
+=============== Feb 12, 2024 (+04) ===============
+17:07:16.864033 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:07:16.864226 version@stat F·[0 1] S·618B[0B 618B] Sc·[0.00 0.00]
+17:07:16.864243 db@open opening
+17:07:16.864289 journal@recovery F·1
+17:07:16.870527 journal@recovery recovering @20
+17:07:16.874491 memdb@flush created L0@23 N·1168 S·11KiB "loc..seq,v9671":"n:\xfe..ong,v9690"
+17:07:16.875311 version@stat F·[1 1] S·12KiB[11KiB 618B] Sc·[0.25 0.00]
+17:07:16.886548 db@janitor F·5 G·1
+17:07:16.886567 db@janitor removing table-19
+17:07:16.886623 db@open done T·22.373044ms

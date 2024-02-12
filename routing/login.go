@@ -6,6 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"time"
 )
 
 func RedirectToError(ctx *gin.Context, err error) {
@@ -14,6 +15,13 @@ func RedirectToError(ctx *gin.Context, err error) {
 
 func RedirectToRolePage(ctx *gin.Context, addr string, role string) {
 	ctx.Redirect(http.StatusMovedPermanently, "/user-page"+"?address="+addr+"&role="+role)
+}
+
+func RedirectFromRequestToRolePage(ctx *gin.Context) {
+	role := ctx.Query("role")
+	address := ctx.Query("address")
+	time.Sleep(time.Second)
+	RedirectToRolePage(ctx, address, role)
 }
 
 func Login(ctx *gin.Context) {

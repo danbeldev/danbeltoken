@@ -28,11 +28,14 @@
     <div>Referral code {{.UserData.ReferralCode}}</div>
 </div>
 <div>
+    <div>From referral code {{.UserData.FromReferralCode}}</div>
+</div>
+<div>
     <div>Discount percent {{.UserData.DiscountPercent}}%</div>
 </div>
 <div>
     Set referral code
-    <form action="/referral-code?address={{.UserData.Addr}}" method="post">
+    <form action="/referral-code?address={{.UserData.Addr}}&role={{.UserData.Role}}" method="post">
         <div>
             <input type="text" name="ref_code" placeholder="Code"/>
         </div>

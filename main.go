@@ -25,6 +25,7 @@ func main() {
 
 	r.GET("/user-page", routing.UserPage)
 	r.POST("/referral-code", routing.SetRefCode)
+	r.POST("/nft", routing.CreateNft)
 
 	r.Run("0.0.0.0:1212")
 }

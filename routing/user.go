@@ -15,7 +15,7 @@ func UserPage(ctx *gin.Context) {
 
 	blockNumber, _ := variables.Client.BlockNumber(ctx)
 	eth, _ := variables.Client.BalanceAt(ctx, address, big.NewInt(int64(blockNumber)))
-
+	
 	templateDict := map[string]string{
 		"BASE_USER": "user.html",
 		"OWNER":     "owner.html",
@@ -24,5 +24,6 @@ func UserPage(ctx *gin.Context) {
 	ctx.HTML(http.StatusOK, templateDict[role], gin.H{
 		"UserData": user,
 		"Eth":      eth,
+		"Nfts":     AllNft(),
 	})
 }

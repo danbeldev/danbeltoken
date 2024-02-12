@@ -28,16 +28,49 @@
     <div>Referral code {{.UserData.ReferralCode}}</div>
 </div>
 <div>
+    <div>From referral code {{.UserData.FromReferralCode}}</div>
+</div>
+<div>
     <div>Discount percent {{.UserData.DiscountPercent}}%</div>
 </div>
 <div>
     Set referral code
-    <form action="/referral-code?address={{.UserData.Addr}}" method="post">
+    <form action="/referral-code?address={{.UserData.Addr}}&role={{.UserData.Role}}" method="post">
         <div>
             <input type="text" name="ref_code" placeholder="Code"/>
         </div>
         <button>Enter</button>
     </form>
+</div>
+<div>
+    Create nft
+    <form action="/nft?address={{.UserData.Addr}}&role={{.UserData.Role}}" method="post">
+        <div>
+            <input type="text" name="nft_name" placeholder="name">
+        </div>
+        <div>
+            <input type="text" name="nft_desc" placeholder="desc">
+        </div>
+        <div>
+            <input type="number" name="nft_price" placeholder="price">
+        </div>
+        <div>
+            <input type="number" name="nft_count" placeholder="count">
+        </div>
+        <button>Create</button>
+    </form>
+</div>
+<div>
+    NFT
+    {{range .Nfts}}
+    <div style="background: bisque; margin: 6px">
+        <div>ID - {{.Id}}</div>
+        <div>Name - {{.Name}}</div>
+        <div>Desc - {{.Desc}}</div>
+        <div>Price - {{.Price}}</div>
+        <div>Count - {{.Count}}</div>
+    </div>
+    {{end}}
 </div>
 </body>
 </html>
